@@ -83,7 +83,7 @@ body {
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-image: url('images/Hintergrund.png'); /* Hintergrundbild für die gesamte Seite */
+    background-image: url('Images/Hintergrund.png'); /* Hintergrundbild für die gesamte Seite */
     background-size: cover; /* Bild deckt den gesamten Hintergrund ab */
     background-position: center; /* Bild zentrieren */
     background-repeat: no-repeat; /* Bild nicht wiederholen */

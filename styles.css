@@ -43,9 +43,11 @@ body {
     background-color: #333; /* Dunklerer Hintergrund bei Hover */
 }
 
-.container {
-    padding: 20px;
-    margin-top: 60px; /* Platz für die Navbar oben */
+.main-container {
+    display: flex; /* Flexbox aktivieren */
+    flex-direction: row; /* Elemente in einer Reihe anordnen */
+    align-items: flex-start; /* Elemente oben ausrichten */
+    padding: 20px; /* Padding um den Container */
 }
 
 .container {
@@ -126,3 +128,36 @@ body {
     font-weight: bold; /* Text dicker machen */
 }
 
+.youtube-playlist {
+    position: absolute; /* Absolut positionieren */
+    top: 150px; /* Abstand von oben (unter der Navbar) */
+    left: 125px; /* Abstand von der linken Seite */
+    width: 300px; /* Breite der Kachel */
+    background-color: rgba(255, 255, 255, 0.75); /* Hintergrundfarbe der Kachel */
+    padding: 20px;
+    border-radius: 50px; /* Ecken abrunden */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Schatten hinzufügen */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Inhalte zentrieren */
+    margin: 20px; /* Abstand um die Kachel */
+}
+
+.youtube-playlist h2 {
+    margin-bottom: 15px; /* Abstand zwischen Titel und Video */
+    font-size: 1.5em; /* Titelgröße anpassen */
+    font-weight: bold; /* Titel dicker machen */
+}
+.youtube-playlist h3 {
+    font-size: 0.8em; /* Oder einen anderen Wert, um den Text kleiner zu machen */
+    color: black; /* Farbe anpassen, falls nötig */
+    margin-top: 1px; /* Abstand nach oben */
+    text-align: center; /* Zentriert den Text */
+}
+.youtube-playlist iframe {
+    width: 100%; /* Volle Breite der Kachel */
+    aspect-ratio: 16 / 9; /* Verhältnis für YouTube-Videos */
+    border: none; /* Kein Rand */
+    border-radius: 10px; /* Ecken abrunden */
+    margin-bottom: 25px; /* Abstand zwischen den Playlists */
+}
